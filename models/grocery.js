@@ -102,3 +102,7 @@ function addItem() {
     //when the form is submitted the item displays on the form
 };
 addItem();
+
+function hello() {
+    console.log("Hello");
+}
