@@ -1,3 +1,12 @@
+module.exports = (sequelize, types) => {
+    return sequelize.define("User", {
+        name: {
+            type: types.STRING,
+            require: true
+        }
+    })
+}
+
 const colors = require("colors");
 const mysql = require('mysql');
 //mysql database for the grocery store inventory
