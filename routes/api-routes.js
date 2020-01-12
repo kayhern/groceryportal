@@ -8,24 +8,27 @@
 // Requiring our models
 var db = require("../models");
 let express = require("express");
-let grocery = require('../models/grocery.js');
+let Grocery = require('../models/grocery.js');
 let router = express.Router();
 
 // Routes
 // =============================================================
-module.exports = function (app) {};
+module.exports = function (app) {
 
-//APP.GET ALL DATA
-app.get('/api/burgers', function (req, res) {
-    db.Burger.findAll({}).then(function (dbBurger) {
-        res.render('index', dbBurger);
+    //display all tables
+    app.get("/api/all", function (req, res) {
+        Grocery.findAll({}).then(function (results) {
+            res.json(results);
+        });
     });
-});
 
-//APP.GET ONE PIECE OF DATA
+    //get table data
 
-//APP.FIND ONE PIECE OF DATA
+    //get item data
 
-//APP.RETRIEVE DATA
+    //get location data
 
-//APP.DELETE ITEM
+    //add item data
+
+    //notify about item data
+};
