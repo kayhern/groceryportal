@@ -1,3 +1,5 @@
+//this is for testing, might not be needed
+
 let groceries = [{
     id: "grocery id",
     item_name: "user input",
