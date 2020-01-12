@@ -16,7 +16,6 @@ let router = express.Router();
 module.exports = function (app) {
 
     //display all tables
-    //***NEED TO ADD A .js file called "all" under public folder */
     app.get("/api/all", function (req, res) {
         Grocery.findAll({}).then(function (results) {
             res.json(results);
