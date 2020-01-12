@@ -7,15 +7,28 @@
 
 // Requiring our models
 var db = require("../models");
+let express = require("express");
+let Grocery = require('../models/grocery.js');
+let router = express.Router();
 
 // Routes
 // =============================================================
-module.exports = function (app) {};
+module.exports = function (app) {
 
-//APP.GET
+    //display all tables
+    app.get("/api/all", function (req, res) {
+        Grocery.findAll({}).then(function (results) {
+            res.json(results);
+        });
+    });
 
-//APP.FIND
+    //get table data
 
-//APP.RETRIEVE
+    //get item data
 
-//APP.DELETE
+    //get location data
+
+    //add item data
+
+    //notify about item data
+};
