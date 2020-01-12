@@ -21,19 +21,13 @@ var db = mysql.createConnection({
     user: "root",
     password: "",
     database: "grocery_db"
-}); **
-A.Grocery Items - options to display data in tables **
-    https: //stackoverflow.com/questions/39620761/web-sql-javascript-show-all-tables-of-database
+});
+// A.Grocery Items - options to display data in tables **
+// https: //stackoverflow.com/questions/39620761/web-sql-javascript-show-all-tables-of-database
 
-    shows a table of the inventory - should change it so the inventory displays in the HTML
-this should be dependent on what the user picks from the UI interface
-    .onclick event calls this
-
-function
-
-this
-
-function should help display all of the tables available in the inventory
+// shows a table of the inventory - should change it so the inventory displays in the HTML
+// this should be dependent on what the user picks from the UI interface
+//  .onclick event calls this function this function should help display all of the tables available in the inventory
 
 function displayTables() {
     db.connect(function (err) {

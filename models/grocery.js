@@ -1,7 +1,7 @@
 var Sequelize = require("sequelize");
 var sequelize = require("../config/connection.js");
 
-var Grocery = sequelize.define("book", {
+var Grocery = sequelize.define("produce_inventory", {
     item_name: Sequelize.STRING,
     price: Sequelize.INTEGER,
     quantity: Sequelize.INTEGER,
