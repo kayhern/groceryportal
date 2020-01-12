@@ -21,13 +21,41 @@ var connection = mysql.createConnection({
     database: "grocery_db"
 });
 
+//https://www.w3schools.com/nodejs/nodejs_mysql_select.asp
+var db = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "grocery_db"
+});
 //**A. Grocery Items - options to display data in tables**
+//https://stackoverflow.com/questions/39620761/web-sql-javascript-show-all-tables-of-database
 
 //shows a table of the inventory - should change it so the inventory displays in the HTML
 //this should be dependent on what the user picks from the UI interface
 //.onclick event calls this function
+
+//this function should help display all of the tables available in the inventory
 function displayTables() {
-    connection.query("SELECT * FROM grocery_db.produce_inventory", function (err, result) {
+    db.connect(function (err) {
+        if (err) throw err;
+        db.query("SELECT * from produce_inventory", function (err, results, fields) {
+            if (err) throw err;
+            console.log(fields[0].orgTable);
+
+        })
+    });
+    //add additional tables once created
+    //display the item in html dashboard
+};
+displayTables();
+
+//this is called when the store manager checks inventory for a specific department
+//.onclick event calls this function
+function checkDepartmentInventory() {
+    //connection.query should have placeholder from user's selection of department - produce_inventory is a placeholder for testing purposes for now 12/12/2020
+    //display the department table in html
+    connection.query('SELECT * FROM grocery_db.produce_inventory', function (err, result) {
         if (err) throw err;
         //borrowed some of this code from the bamazon homework
         console.log("These are the items in inventory:")
@@ -39,20 +67,9 @@ function displayTables() {
             console.log("price: ".brightMagenta + element.price)
             console.log("stock: ".brightMagenta + element.quantity)
             console.log("aisle: ".brightMagenta + element.aisle_number)
-            console.log(colors.rainbow("-------------------------------------"))
+            console.log(colors.rainbow("-------------------------------------"));
         });
     });
-    //add additional tables once created
-    //display the item in html dashboard
-};
-displayTables();
-
-//this is called when the store manager checks inventory for a specific department
-//.onclick event calls this function
-function checkDepartmentInventory() {
-    //connection.query should have placeholder from user's selection
-    //console.log the same column data from the tables as displayTables(); function
-    //display the department table in html
 };
 checkDepartmentInventory();
 
@@ -60,6 +77,13 @@ function checkDepartmentItem() {
     //connection.query should have placeholder from user's selection
     //console.log the specific item
     //display specific item in html
+    connection.query('SELECT * FROM grocery_db.produce_inventory', function (err, result) {
+        if (err) throw err;
+        console.log("Here is the information for this item:")
+        console.log(colors.rainbow("-------------------------------------"))
+        //here is where we need to incorporate user input from the HTML
+        console.log(result[0]);
+    });
 };
 checkDepartmentItem();
 
@@ -102,7 +126,3 @@ function addItem() {
     //when the form is submitted the item displays on the form
 };
 addItem();
-
-function hello() {
-    console.log("Hello");
-}
