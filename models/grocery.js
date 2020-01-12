@@ -16,8 +16,7 @@ var connection = mysql.createConnection({
     port: 3306,
     // Your username
     user: "root",
-    // Your password
-    password: "",
+    // Your pasJoe4hire",
     database: "grocery_db"
 });
 
