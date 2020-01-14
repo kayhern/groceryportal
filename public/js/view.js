@@ -1,0 +1,1 @@
+// view.js  ..landing page when opening local host
