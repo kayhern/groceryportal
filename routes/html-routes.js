@@ -18,24 +18,36 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/view.html"));
   });
 
-//   // add route loads the add.html page, where users can enter new books to the db
-//   app.get("/add", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/add.html"));
-//   });
 
-//   // all route loads the all.html page, where all books in the db are displayed
-//   app.get("/all", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/all.html"));
-//   });
+  // our html files are : all.html, deptSearch.html, search.html , about.html,speciallist.html, view.html 
+// 
 
-//   // short route loads the short.html page, where short books in the db are displayed
-//   app.get("/short", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/short.html"));
-//   });
 
-//   // long route loads the long.html page, where long books in the db are displayed
-//   app.get("/long", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/long.html"));
-//   });
+  // all route loads the all.html page, where all  in inventory in db are displayed
+  app.get("/all", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/all.html"));
+  });
+
+  // short route loads the search.html page, where the search page in the db are displayed
+  app.get("/short", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/search.html"));
+  });
+
+// specialist route loads the specialist.html page, where the specialist info is displayed
+
+  app.get("/long", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/specialist.html"));
+  });
+
+   // deptSearch route loads the deptSearch.html page, where dept Search in the db are displayed
+  app.get("/long", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/deptSearch.html"));
+  });
+
+  //   // add route loads the about.html page, a page that gives a brief description of the team
+
+  app.get("/add", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/about.html"));
+  });
 
 };
