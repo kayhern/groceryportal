@@ -23,40 +23,49 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand"><img src="../public/images/wizard.jpg"> Inventory Wizard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand"><img src="../public/images/wizard.jpg" width="175"> Inventory Wizard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="view.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="deptSearch.html">Inventory By Dept</a>
-            </li>
-           
-            <li class="nav-item">
-              <a class="nav-link" href="specialist.html">Search</a>
-            </li>
-            <li class="nav-item">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="view.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deptSearch.html">Inventory By Dept</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="specialist.html">Search</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="about">Inventory Specialist</a>
-                  </li>
-                  <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                      </li>
-          </ul>
-          </nav>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+    </nav>
 
     <div class="container" id="main">
-<h1>Welcome to the Inventory Wizard Page</h1>
+        <br>
+        <h2>We are the Inventory Wizards</h2>
+        <br>
         <div class="row container">
-            <p1>row1 -- row for dashboard icons</p1>
+            <div class="col-sm-4"><img src="./images/dashA.png" width="200"></div>
+            <div class="col-sm-4"><img src="./images/dashB.png" width="200"></div>
+            <div class="col-sm-4"><img src="./images/dashC.png" width="200"></div>
         </div>
         <!--end div  row1-->
 
         <div class="row container">
-            <p1>row2 -- row for submit button</p1>
+            <div class="col-sm-4"><button type="button" class="btn btn-secondary" id="buttondash">Inventory by
+                    Dept</button></div>
+            <div class="col-sm-4"><button type="button" class="btn btn-secondary" id="buttondash">Search</button></div>
+            <div class="col-sm-4"><button type="button" class="btn btn-secondary" id="buttondash">Inventory
+                    Specialists</button></div>
         </div>
         <!--end div row2-->
     </div>
