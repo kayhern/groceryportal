@@ -29,24 +29,24 @@ module.exports = function(app) {
   });
 
   // short route loads the search.html page, where the search page in the db are displayed
-  app.get("/short", function(req, res) {
+  app.get("/search", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/search.html"));
   });
 
 // specialist route loads the specialist.html page, where the specialist info is displayed
 
-  app.get("/long", function(req, res) {
+  app.get("/specialist", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/specialist.html"));
   });
 
    // deptSearch route loads the deptSearch.html page, where dept Search in the db are displayed
-  app.get("/long", function(req, res) {
+  app.get("/deptSearch", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/deptSearch.html"));
   });
 
-  //   // add route loads the about.html page, a page that gives a brief description of the team
+  //   // about route loads the about.html page, a page that gives a brief description of the team
 
-  app.get("/add", function(req, res) {
+  app.get("/about", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/about.html"));
   });
 
