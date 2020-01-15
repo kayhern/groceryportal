@@ -19,9 +19,14 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="../public/css/style.css" rel="stylesheet" type="text/css">
 
+  <script src="../public/js/deptSearch.js"></script>
+
+
 </head>
 
 <body>
+
+  <!--nav bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand"><img src="../public/images/wizard.jpg" width="175"> Inventory Wizard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -53,51 +58,45 @@
     <h1>Search by Department</h1>
     <div class="row container">
 
-      <!-- <p1>row1 -- row for dashboard icons</p1> -->
-<br> 
-<br>
-      <form action="" method="POST" role="form">
-        <div class="form-group">
-          <label form"">Title</label>
-          <input type="text" class="form-control" id="title" placeholder="">
-        </div>
-
-        <div class="form-group">
-          <label form"">Author</label>
-          <input type="text" class="form-control" id="author" placeholder="">
-        </div>
-
-        <div class="form-group">
-          <label form"">Genre</label>
-          <input type="text" class="form-control" id="genre" placeholder="">
-        </div>
-
-        <div class="form-group">
-          <label form"">Pages</label>
-          <input type="text" class="form-control" id="pages" placeholder="">
-        </div>
-      </form>
 
       <br>
+      <br>
 
-      
-      <!--end div  row1-->
+      <!-- drop down menu code obtained from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown-->
 
-      <div class="row container">
-        <p1>row2 -- row for submit button</p1>
-      </div>
-      <div class="text-right">
-          <button type="submit" class="btn btn-primary btn-md" id="add-btn">
-            <span class glyphicon glyphicon-book"></span> Add a book
-          </button>
-  
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <p id="Health">Health and Beauty</p>
+          <p id="Produce">Produce</p>
+          <p id="canned">Canned Goods</p>
+          <p id="deli">Deli</p>
         </div>
+      </div>
+<!--end div for dropdown menu-->
+
+
     </div>
-    <!--end div for main-->
+    <!--end div  row1-->
 
-    <!--end of main div-->
-    <footer>footer</footer>
+    <div class="row container">
+      <p1>row2 -- row for submit button</p1>
 
+    </div>
+    <div class="text-right">
+      <button type="submit" class="btn btn-primary btn-md" id="add-btn">
+        <span class glyphicon glyphicon-book"></span> Add a book
+      </button>
+
+    </div>
+  </div>
+  <!--end div for main-->
+
+  <!-- added script in html because it was not working in js file-->
+  
+  <!--end of main div-->
+  <footer>footer</footer>
+  <script src="js/deptSearch.js" type="text/javascript"></script>
 </body>
 
 </html>
