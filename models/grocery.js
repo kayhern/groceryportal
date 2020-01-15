@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 module.exports = (sequelize, types) => {
     return sequelize.define("User", {
         name: {
@@ -19,16 +18,6 @@ var connection = mysql.createConnection({
     user: "root",
     // Your pasJoe4hire",
     database: "grocery_db"
-=======
-var Sequelize = require("sequelize");
-var sequelize = require("../config/connection.js");
-
-var Grocery = sequelize.define("produce_inventory", {
-    item_name: Sequelize.STRING,
-    price: Sequelize.INTEGER,
-    quantity: Sequelize.INTEGER,
-    aisle_number: Sequelize.INTEGER
->>>>>>> 1d831846e4f87a1ec320f53d7db705a0cde3f111
 });
 
 Grocery.sync();
