@@ -1,1 +1,9 @@
-// view.js  ..landing page when opening local host
+// view.js  
+
+//view all of the tables in the SQL database
+
+$(document).ready(function () {
+
+    "#buttonDashAll"
+
+});
