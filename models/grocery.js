@@ -1,9 +1,10 @@
-module.exports = (sequelize, type) => {
-    return Grocery = sequelize.define("inventory", {
-        item_name: type.STRING,
-        department: type.STRING,
-        price: type.INTEGER,
-        quantity: type.INTEGER,
-        aisle_number: type.INTEGER
+module.exports = function (sequelize, DataTypes) {
+    var Grocery = sequelize.define("inventory", {
+        item_name: DataTypes.STRING,
+        department: DataTypes.STRING,
+        price: DataTypes.INTEGER,
+        quantity: DataTypes.INTEGER,
+        aisle_number: DataTypes.INTEGER
     });
-}
+    return Grocery;
+};
