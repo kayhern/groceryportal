@@ -43,6 +43,30 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/specialist.html"));
   });
 
+// specialist route loads the add.html page, where the specialist add inventory
+
+app.get("/add", function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/add.html"));
+});
+
+// specialist route loads the add.html page, where the specialist remove inventory
+
+app.get("/remove", function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/remove.html"));
+});
+
+// specialist route loads the add.html page, where the specialist modify inventory
+
+app.get("/modify", function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/modify.html"));
+});
+
+// specialist route loads the add.html page, where the specialist to stock inventory
+
+app.get("/stock", function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/stock.html"));
+});
+
   // deptSearch route loads the deptSearch.html page, where dept Search in the db are displayed
   app.get("/deptSearch", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/deptSearch.html"));
