@@ -25,7 +25,7 @@ module.exports = function (app) {
 
   // all route loads the all.html page, where all  in inventory in db are displayed
   app.get("/all", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/all.html"));
+    res.sendFile(path.join(__dirname, "../public/all"));
   });
 
   app.get("/all", function (req, res) {

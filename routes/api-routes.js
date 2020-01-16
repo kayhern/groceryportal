@@ -6,7 +6,7 @@
 // =============================================================
 
 // Requiring our models
-var db = require("../models");
+var db = require("../models/index.js");
 let express = require("express");
 let Grocery = require('../models/grocery.js');
 let router = express.Router();
