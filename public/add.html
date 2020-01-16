@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Department Search</title>
+  <title>Add Inventory</title>
 
   <!-- adding reset css file  -->
   <link href="../public/css/reset.css" rel="stylesheet" type="text/css">
@@ -15,19 +15,13 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- adding JQuery-->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <link href="../public/css/style.css" rel="stylesheet" type="text/css">
-
-
 
 </head>
 
-
 <body>
-
-  <!--nav bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand"><img src="images/wizard.png" width="175"> Inventory Wizard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -55,51 +49,57 @@
       </ul>
   </nav>
 
-  <div class="container" id="main">
+  <div class="container" id="main"></div>
+  <h1> Inventory Specialist Page</h1>
+  <!-- <hr> -->
+  <!-- <div class="row container"> -->
+    <hr>
+    <a href='/add' class='btn btn-primary btn-lg'>
+      <span class='fa fa-list'></span> Add Inventory</span>
+    </a>
+    <a href='/remove' class='btn btn-primary btn-lg'>
+      <span class='fa fa-list'></span> Remove Inventory</a>
+    <a href='/modify' class='btn btn-primary btn-lg'>
+      <span class='fa fa-th-list'></span> Modify Inventory</a>
+    <a href='/stock' class='btn btn-primary btn-lg'>
+      <span class='fa fa-th-list'></span> Stock Inventory</a>
 
+  <!-- </div> -->
+  <!--end div  row1-->
 
+<br>
+  <div class="row container">
 
-    <div class="row container">
-
-
-
-      <!-- drop down menu code obtained from -->
-
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-          <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="search.html">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-        </ul>
+<!--form to display inventory-->
+    <form action="" method="POST" role="form">
+      <div class="form-group">
+          <label form"">Item Name</label>
+          <input type="text" class="form-control" id="item_name" placeholder="">
       </div>
-      <!--end div for dropdown menu-->
 
+      <div class="form-group">
+          <label form"">Price</label>
+          <input type="text" class="form-control" id="price" placeholder="">
+      </div>
 
-    </div>
-    <!--end div  row1-->
+      <div class="form-group">
+          <label form"">Quantity</label>
+          <input type="text" class="form-control" id="Quantity" placeholder="">
+      </div>
 
-
-    <!-- <div class="row container">
-      <p1>row2 -- row for submit button</p1>
-      <br>
-
-      <button type="submit" class="btn btn-primary btn-md" id="add-btn">
-        Add a book
-      </button>
-
-    </div> -->
-    <!--end div for row2-->
-
+      <div class="form-group">
+          <label form"">Aisle Number</label>
+          <input type="text" class="form-control" id="aisle_number" placeholder="">
+      </div>
+  </form>
+  </div>
+  <!--end div row2-->
   </div>
   <!--end div for main-->
 
 
+  <!-- <footer>footer</footer> -->
 
-
-  <footer>footer</footer>
-  <script src="../public/js/deptSearch.js"></script>
 </body>
 
 </html>
