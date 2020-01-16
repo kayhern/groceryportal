@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Inventory Specialist</title>
+  <title>Stock Inventory</title>
 
   <!-- adding reset css file  -->
   <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -15,18 +15,14 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- adding JQuery-->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
-  <!-- styling css -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-    <!-- image in nav bar not displaying , fixed by refererencing https://stackoverflow.com/questions/47151492/stylesheet-not-loading-because-mime-type-is-text-html-->
     <a class="navbar-brand"><img src="images/wizard.png" width="175"> Inventory Wizard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,14 +38,14 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" href="search.html">Search</a>
+          <a class="nav-link" href="search.html">Search</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="specialist.html">Inventory Specialist</a>
+          <a class="nav-link active" href="specialist.html">Inventory Specialist</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="all.html">All Inventory</a>
-        </li>
+                <a class="nav-link" href="all.html">All Inventory</a>
+            </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
@@ -57,52 +53,51 @@
   </nav>
 
   <div class="container" id="main"></div>
-  <h1> Search Page</h1>
+  <h2> Inventory Specialist Stock Information</h2>
+  <!-- <hr> -->
+  <!-- <div class="row container"> -->
+    <hr>
+    <a href='/add' class='btn btn-primary btn-lg'>
+      <span class='fa fa-list'></span> Add Inventory</span>
+    </a>
+    <a href='/remove' class='btn btn-primary btn-lg'>
+      <span class='fa fa-list'></span> Remove Inventory</a>
+    <a href='/modify' class='btn btn-primary btn-lg'>
+      <span class='fa fa-th-list'></span> Modify Inventory</a>
+    <a href='/stock' class='btn btn-primary btn-lg'>
+      <span class='fa fa-th-list'></span> Stock Inventory</a>
+
+  <!-- </div> -->
+  <!--end div  row1-->
+
+<br>
+
+<div class="row container">
+
+        <!--submit button code-->
+        <div class="row container">
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-md" id="locate-btn">
+                        <span class glyphicon glyphicon-book"></span> LOCATE
+                    </button>
+
+                </div>
+            </div> <!--end of submit button code-->
+
+
+</div> <!--end div -->
   <div class="row container">
 
-  <div class="container row">
-<!-- drop down menu code obtained from -->
-
-<h2> Please check item to Search (only 1)</h2>
-</div> <!--end of row 2-->
-<div class="row container">
-  <input type="checkbox" name="vehicle1" value="Bike"> ID<br>
-<input type="checkbox" name="vehicle2" value="Car"> Item Number<br>
-<input type="checkbox" name="vehicle3" value="Boat" checked> Category<br>
-</div>
-
-<div class="row container">
-
-  <div class="form-group">
-    <label form"">Search Item</label>
-    <input type="text" class="form-control" id="submit-search" placeholder="">
-</div>
-</div>
-<!--end div for dropdown menu-->
-   
-  </div><!--end div  row1-->
-  
-
-    
-
-    
-
-    <div class="row container">
-      
-
-   
-
-    
-    <div class="text-right">
-      <button type="submit" class="btn btn-primary btn-md" id="add-btn">
-        Submit
-      </button>
-    </div>
-    </div>
+<!-- display inventory map-->
+    <img src="images/floorplan.png">
   </div>
-  <!--end of main div-->
-  <footer>footer</footer>
-  <script src="js/search.js" type="text/javascript"></script>
+  <!--end div row2-->
+  </div>
+  <!--end div for main-->
+
+
+  <!-- <footer>footer</footer> -->
+
 </body>
 
 </html>

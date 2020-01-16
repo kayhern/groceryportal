@@ -8,29 +8,32 @@
   <title>About FishEye Inventory</title>
 
   <!-- adding reset css file  -->
-  <link href="../public/css/reset.css" rel="stylesheet" type="text/css">
+  <!-- <link href="../public/css/reset.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
 
   <!-- adding Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- adding JQuery-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="../public/css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
+  <!-- styling css -->
+  <!-- <link href="../public/css/style.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand"><img src="../public/images/wizard.jpg" width="175"> Inventory Wizard</a>
+    <a class="navbar-brand"><img src="images/wizard.png" width="175"> Inventory Wizard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="nav navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -42,9 +45,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="specialist.html">Inventory Specialist</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="all.html">All Inventory</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link active" href="about.html">About</a>
         </li>
       </ul>
   </nav>

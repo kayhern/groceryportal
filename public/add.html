@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Inventory Specialist</title>
+  <title>Add Inventory</title>
 
   <!-- adding reset css file  -->
   <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -30,7 +30,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="nav navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -42,10 +42,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="specialist.html">Inventory Specialist</a>
-        </li>
+        </li> 
         <li class="nav-item">
-            <a class="nav-link" href="all.html">All Inventory</a>
-        </li>
+                <a class="nav-link" href="all.html">All Inventory</a>
+            </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
@@ -53,11 +53,11 @@
   </nav>
 
   <div class="container" id="main"></div>
-  <h2> Inventory Specialist Page</h2>
+  <h2> Inventory Specialist Add Page</h2>
   <!-- <hr> -->
   <!-- <div class="row container"> -->
     <hr>
-    <a href='add' class='btn btn-primary btn-lg'>
+    <a href='/add' class='btn btn-primary btn-lg'>
       <span class='fa fa-list'></span> Add Inventory</span>
     </a>
     <a href='/remove' class='btn btn-primary btn-lg'>
@@ -87,7 +87,7 @@
 
       <div class="form-group">
           <label form"">Quantity</label>
-          <input type="text" class="form-control" id="Quantity" placeholder="">
+          <input type="text" class="form-control" id="quantity" placeholder="">
       </div>
 
       <div class="form-group">
@@ -97,6 +97,18 @@
   </form>
   </div>
   <!--end div row2-->
+  
+  <!--submit button code-->
+            <div class="row container">
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-md" id="add-btn">
+                        <span class glyphicon glyphicon-book"></span> Add
+                    </button>
+
+                </div>
+            </div> <!--end of submit button code-->
+
+
   </div>
   <!--end div for main-->
 
