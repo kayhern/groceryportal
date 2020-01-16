@@ -15,18 +15,40 @@ let router = express.Router();
 // =============================================================
 module.exports = function (app) {
 
-    //display all tables
+    //display all items in the frocery table
     app.get("/api/all", function (req, res) {
         Grocery.findAll({}).then(function (results) {
             res.json(results);
+
         });
     });
 
-    //get table data
-
-    //get item data
+    //get displays items whose names matches users query as a JSON object 
+    app.get("/api/item/:item", function (req, res) {
+        if (req.param.item_name) {
+            Grocery.findAll({
+                where: {
+                    name: req.param.item_name
+                }
+            }).then(function (results) {
+                res.json(results);
+            });
+        }
+    });
 
     //get location data
+    app.get("/api/location/:location", function (req, res) {
+        if (req.param.aisle_number) {
+            Grocery.findAll({
+                where: {
+                    location: req.param.aisle_number
+                }
+            }).then(function (results) {
+                res.json(results);
+            });
+        }
+    });
+
 
     //add item data
     // add a book  - video - time ; 8:51
