@@ -50,16 +50,21 @@ module.exports = function (app) {
     });
 
 
-    //add item data
-    // add a book  - video - time ; 8:51
-    // app.post("api/new", function(req, res){
-    // Book.create({ 
-    // title: req.body.title, 
-    // author: req.body.author, 
-    // genere: req.body.genre,
-    // pages: req.body.pages 
-    // }); 
-    // }); 
+    //add grocery data
+    // add a book  - video - time ; 8:51 
+    //https://www.youtube.com/watch?v=dt9mXaEEAkM
+
+    app.post("api/new", function(req, res){
+    grocery.create({ 
+        id:req.body.id,
+    item_name: req.body.item_name, 
+    price: req.body.price, 
+    quantity: req.body.quantity,
+    aisle_name: req.body.aisle_number, 
+    createdAt: req.body.createdAt,
+    updatedAt: req.body.updatedAt
+    }); 
+    }); 
 
     //notify about item data
 };
