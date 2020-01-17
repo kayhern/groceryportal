@@ -13,7 +13,7 @@
  var PORT = process.env.PORT || 8080;
 
  // Requiring our models for syncing
- var db = require("./models/index");
+ var db = require("./models");
 
  // Sets up the Express app to handle data parsing
  app.use(express.urlencoded({
@@ -39,8 +39,21 @@
    app.listen(PORT, function () {
      console.log("App listening on PORT " + PORT);
    });
- });
 
- module.exports.app = {
-   app
- }
+   return true;
+   // check if db has data
+   //if no records, create else do nothing
+   // db.Inventories
+ }).then(() => {
+   db.Inventories.findAll({}).then((data) => {
+     if (!data) {
+       db.Inventories.create({
+         item_name: "grapes",
+         department: "produce",
+         price: 6.99,
+         quantity: 100,
+         aisle_number: 5
+       })
+     }
+   });
+ })

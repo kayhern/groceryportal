@@ -2,6 +2,13 @@
 //https://stackoverflow.com/questions/52229901/navigate-to-route-on-button-click/52230237
 
 $(document).ready(function () {
+    $.ajax({
+        url: '/api/all',
+        method: 'GET',
+        success: (data) => {
+            console.log(data)
+        }
+    })
     //on click event for the "All Inventory" Button
     $("#buttonDashAll").click(function () {
         //go to all inventory page
