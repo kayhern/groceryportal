@@ -13,10 +13,11 @@ $.get("/api/all", function (data) {
         $("#SQLtable").append(itemInventory);
 
         // Now  we add our book data to the section we just placed on the page
-        $("#item-inventory-" + i).append("<h2>" + (i + 1) + ". " + data[i].item_name + "</h2>");
-        $("#item-inventory-" + i).append("<h3>Price: " + data[i].price + "</h4>");
-        $("#item-inventory-" + i).append("<h3>Quantity: " + data[i].quantity + "</h4>");
-        $("#item-inventory-" + i).append("<h3>Aisle Number: " + data[i].aisle_number + "</h4>");
+        $("#item-inventory-" + i).append("<h2><b>Item:</b> " + data[i].item_name + "</h2>");
+        $("#item-inventory-" + i).append("<h3><b>Price:</b> " + data[i].price + "</h4>");
+        $("#item-inventory-" + i).append("<h3><b>Quantity:</b> " + data[i].quantity + "</h4>");
+        $("#item-inventory-" + i).append("<h3><b>Aisle Number:</b> " + data[i].aisle_number + "</h4>");
+        $("#item-inventory-" + i).append("<hr>");
     }
 });
 // Make a get request to our api route that will return every grocery item in inventory
