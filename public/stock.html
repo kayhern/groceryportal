@@ -24,10 +24,13 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand"><img src="images/wizard.png" width="175"> Inventory Wizard</a>
+	
+	
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+	
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="nav navbar-nav">
         <li class="nav-item">
@@ -44,19 +47,22 @@
           <a class="nav-link active" href="specialist.html">Inventory Specialist</a>
         </li>
         <li class="nav-item">
-                <a class="nav-link" href="all.html">All Inventory</a>
-            </li>
+          <a class="nav-link" href="all.html">All Inventory</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
       </ul>
-  </nav>
+  </nav> <!--end of nav-->
 
-  <div class="container" id="main"></div>
-  <h2> Inventory Specialist Stock Information</h2>
-  <!-- <hr> -->
-  <!-- <div class="row container"> -->
+  <div class="container" id="main">
+
+    <h2> Inventory Specialist Stock Information</h2>
+    <!-- <hr> -->
+    
     <hr>
+
+    <!-- buttons -->
     <a href='/add' class='btn btn-primary btn-lg'>
       <span class='fa fa-list'></span> Add Inventory</span>
     </a>
@@ -67,36 +73,61 @@
     <a href='/stock' class='btn btn-primary btn-lg'>
       <span class='fa fa-th-list'></span> Stock Inventory</a>
 
-  <!-- </div> -->
-  <!--end div  row1-->
 
-<br>
+    <br>
 
-<div class="row container">
+    <h2> Search Page</h2>
+    <div class="row container">
+  
+      <div class="container row">
+        <!-- drop down menu code obtained from -->
+  
+        <h3> Check one only: </h3>
+      </div>
+      <!--end of row 2-->
+      <div class="col-md-4">
+        <form>
+        <input type="radio" name="searchParam" value="id"> ID<br>
+        <input type="radio" name="searchParam" value="item_number"> Item Number<br>
+        <input type="radio" name="searchParam" value="name" checked> Name<br>
+      </form>
+   
+      </div>
 
-        <!--submit button code-->
-        <div class="row container">
-                <div class="text-right">
-                    <button type="submit" class="btn btn-primary btn-md" id="locate-btn">
-                        <span class glyphicon glyphicon-book"></span> LOCATE
-                    </button>
+    <div class="row">
 
-                </div>
-            </div> <!--end of submit button code-->
+<div class="col-md-4">
 
 
-</div> <!--end div -->
-  <div class="row container">
+      <!--locate button code-->
+	  
+     
+        <div class="text-right">
+          <button type="submit" class="btn btn-primary btn-md" id="locate-btn">
+            <span class glyphicon glyphicon-book"></span> LOCATE
+          </button>
 
-<!-- display inventory map-->
-    <img src="images/floorplan.png">
+        </div>
+     
+      <!--end of locate button code-->
+</div>
+    
+
+
+
+  <div class="col-md-4">
+    <!-- display inventory map-->
+    <img src="images/floor.png" width="400">
   </div>
-  <!--end div row2-->
+
+</div>
+
+
   </div>
   <!--end div for main-->
 
 
-  
+
 
 </body>
 
