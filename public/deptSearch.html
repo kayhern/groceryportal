@@ -15,8 +15,8 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- adding JQuery-->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
@@ -27,9 +27,9 @@
 
 <body>
 
-  <!--nav bar -->
+  <!--nav menu bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand"><img src="images/wizard.png" width="175"> Inventory Wizard</a>
+    <a class="navbar-brand"><img src="images/wizard.png" width="175"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -48,9 +48,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="specialist.html">Inventory Specialist</a>
-        </li> 
+        </li>
         <li class="nav-item">
-            <a class="nav-link" href="all.html">All Inventory</a>
+          <a class="nav-link" href="all.html">All Inventory</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
@@ -60,71 +60,55 @@
 
   <div class="container" id="main">
 
-      <h3>Please select your Department</h3>
+    <h3>Please select your Department</h3>
+    <br>
+    <div class="row">
 
-    <div class="row container">
 
+      <!-- radio buttons to select department -->
 
-<div col md-4>
-     
-        <form>
-      
-          
-            <input type="radio" name="searchParam" value="backery">Bakery<br>
-            <input type="radio" name="searchParam" value="bulk"> Bulk<br>
-            <input type="radio" name="searchParam" value="dairy">Dairy<br>
-            <input type="radio" name="searchParam" value="deli">Deli<br>
-            <input type="radio" name="searchParam" value="florist">Florist<br>
-            <input type="radio" name="searchParam" value="frozen">Frozen<br>
-            <input type="radio" name="searchParam" value="baby">baby<br>
-            <input type="radio" name="searchParam" value="meat"> Meat<br>
-            <input type="radio" name="searchParam" value="seafood">Seafood<br>
-            <input type="radio" name="searchParam" value="wine">Wine<br>
-            <input type="radio" name="searchParam" value="produce">Produce <br>
-            <input type="radio" name="searchParam" value="soup">Soup<br>
-          </form>
-        </div>
+      <div class="row container">
 
-        <div col md-4>
-     
-            <form>
-          
-              
-                <input type="radio" name="searchParam" value="backery">Bakery<br>
-                <input type="radio" name="searchParam" value="bulk"> Bulk<br>
-                <input type="radio" name="searchParam" value="dairy">Dairy<br>
-                <input type="radio" name="searchParam" value="deli">Deli<br>
-                <input type="radio" name="searchParam" value="florist">Florist<br>
-                <input type="radio" name="searchParam" value="frozen">Frozen<br>
-                <input type="radio" name="searchParam" value="baby">baby<br>
-                <input type="radio" name="searchParam" value="meat"> Meat<br>
-                <input type="radio" name="searchParam" value="seafood">Seafood<br>
-                <input type="radio" name="searchParam" value="wine">Wine<br>
-                <input type="radio" name="searchParam" value="produce">Produce <br>
-                <input type="radio" name="searchParam" value="soup">Soup<br>
-              </form>
-            </div>
-            <div col md-4>
-     
-                <form>
-              
-                  
-                    <input type="radio" name="searchParam" value="backery">Bakery<br>
-                    <input type="radio" name="searchParam" value="bulk"> Bulk<br>
-                    <input type="radio" name="searchParam" value="dairy">Dairy<br>
-                    <input type="radio" name="searchParam" value="deli">Deli<br>
-                    <input type="radio" name="searchParam" value="florist">Florist<br>
-                    <input type="radio" name="searchParam" value="frozen">Frozen<br>
-                    <input type="radio" name="searchParam" value="baby">baby<br>
-                    <input type="radio" name="searchParam" value="meat"> Meat<br>
-                    <input type="radio" name="searchParam" value="seafood">Seafood<br>
-                    <input type="radio" name="searchParam" value="wine">Wine<br>
-                    <input type="radio" name="searchParam" value="produce">Produce <br>
-                    <input type="radio" name="searchParam" value="soup">Soup<br>
-                  </form>
-                </div>
+        <div class="col md-1"> <input type="radio" name="searchParam" value="baby">Baby</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="bakery"> Bakery</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="bulk">Bulk</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="cereal">Cereal</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="chips">Chips</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="cleaning">Cleaning</div><br>
+
       </div>
-      <!--end div for radio buttons-->
+
+      <div class="row container">
+
+        <div class="col md-1"><input type="radio" name="searchParam" value="clearance">Clearance</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="cookies">Cookies</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="dairy">Dairy</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="deli">Deli</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="florist">Florist</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="frozen">Frozen</div><br>
+
+
+      </div>
+
+      <div class="row container">
+        <div class="col md-1"><input type="radio" name="searchParam" value="magazines">Magazines</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="meat">Meat</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="pets">Pets</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="produce">Produce</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="seafood">Seafood</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="seasonal">Seasonal</div><br>
+
+      </div>
+      <br>
+      <div class="row container">
+        <div class="col md-1"><input type="radio" name="searchParam" value="soda">Soda</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="soup">Soup</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="spices">Spices</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="wine">Wine</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="kiosk">Coffee Kiosk</div><br>
+        <div class="col md-1"><input type="radio" name="searchParam" value="custservice">Customer Service</div><br>
+
+      </div>
 
 
     </div>
@@ -135,21 +119,17 @@
 
 
 
-        <div class="text-right">
-          <button type="submit" class="btn btn-primary btn-md" id="add-btn">
-            Submit
-          </button>
-        </div>
-    <!--end div for row2-->
+      <div class="text-right"><br>
+        <button type="submit" class="btn btn-primary btn-md" id="dept-btn">
+          Submit
+        </button>
+      </div>
+      <!--end div for row2-->
 
-  </div>
-  <!--end div for main-->
+    </div>
+    <!--end div for main-->
 
-
-
-
-  
-  <script src="js/deptSearch.js"></script>
+    <script src="js/deptSearch.js"></script>
 </body>
 
 </html>
