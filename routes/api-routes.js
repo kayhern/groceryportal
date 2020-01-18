@@ -68,4 +68,19 @@ module.exports = function (app) {
         });
     });
     //notify about item data
+
+    //get dept by department
+    app.get("/inventories", function (req, res) {
+        if (req.param.department) {
+            db.Inventories.findAll({
+                where: {
+                    department: {
+                        produce
+                    }
+                }
+            }).then(function (results) {
+                res.json(results);
+            });
+        }
+    });
 };
