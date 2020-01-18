@@ -1,6 +1,3 @@
-$(document).ready(function () {
-
-
   // When user clicks add-btn
   $("#add-btn").on("click", function (event) {
     event.preventDefault();
@@ -16,9 +13,16 @@ $(document).ready(function () {
     // Send an AJAX POST-request with jQuery
     $.post("/api/new", newGrocery)
       // On success, run the following code
-      .done(function (data) {
+      .then(function (data) {
         // Log the data we found
         console.log(data);
+        newGrocery
+          .create({
+            item_name: $("#item_name").val().trim(),
+            price: $("#price").val().trim(),
+            quantity: $("#quantity").val().trim(),
+            aisle_number: $("#aisle_number").val().trim()
+          })
       });
 
     // Empty each input box by replacing the value with an empty string
@@ -28,5 +32,3 @@ $(document).ready(function () {
     $("#aisle_number").val("");
 
   });
-
-});

@@ -53,8 +53,8 @@ module.exports = function (app) {
     // add a book  - video - time ; 8:51 
     //https://www.youtube.com/watch?v=dt9mXaEEAkM
 
-    app.post("api/new", function (req, res) {
-        db.Inventories.create({
+    app.post("/api/new", function (req, res) {
+        db.newItem.create({
             id: req.body.id,
             item_name: req.body.item_name,
             price: req.body.price,
@@ -62,6 +62,9 @@ module.exports = function (app) {
             aisle_name: req.body.aisle_number,
             createdAt: req.body.createdAt,
             updatedAt: req.body.updatedAt
+        }).then(function (newItem) {
+            console.log(newItem)
+
         });
     });
 
