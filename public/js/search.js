@@ -1,24 +1,37 @@
 $(document).ready(function () {
 
-    // let querySearch = (searchParam) => {
+    let querySearch = (searchParam) => {
 
-    //     switch (searchParam) {
-    //         case "ID":
-    //             db.Inventories.findAll({
-    //                 where: {
-    //                     ID =
-    //                 }
-    //             })
-    //             break;
-    //         case "name":
+        switch (searchParam) {
+            case "ID":
+                db.Inventories.findAll({
+                    where: {
+                        id = req.param.id
+                    }
+                })
+                console.log("item IS: " + id)
+                break;
+            case "name":
+                db.Inventories.findAll({
+                    where: {
+                        name = req.param.item_name
+                    }
+                })
+                console.log("name: " + name)
 
-    //             break;
-    //         case "item_number":
+                break;
+            case "item_number":
+                db.Inventories.findAll({
+                    where: {
+                        item_number = req.param.item_name
+                    }
+                })
+                console.log("item number: " + item_name)
 
-    //             break;
-    //     }
+                break;
+        }
 
-    // }
+    }
 
 
 
@@ -31,7 +44,7 @@ $(document).ready(function () {
         console.log(queryKeyword)
         console.log(queryParam)
         console.log(typeof queryParam)
-        // querySearch()
+        querySearch()
     })
 
 })

@@ -22,6 +22,13 @@ module.exports = function (app) {
   // our html files are : all.html, deptSearch.html, search.html , about.html,speciallist.html, view.html 
   // 
 
+  // JQuery code require so JS runs smoothly 
+
+
+  app.get("/search.js", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/js/search.js"));
+  })
+
 
   // all route loads the all.html page, where all  in inventory in db are displayed
   app.get("/all", function (req, res) {
@@ -43,29 +50,29 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/specialist.html"));
   });
 
-// specialist route loads the add.html page, where the specialist add inventory
+  // specialist route loads the add.html page, where the specialist add inventory
 
-app.get("/add", function (req, res) {
-  res.sendFile(path.join(__dirname, "../public/add.html"));
-});
+  app.get("/add", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/add.html"));
+  });
 
-// specialist route loads the add.html page, where the specialist remove inventory
+  // specialist route loads the add.html page, where the specialist remove inventory
 
-app.get("/remove", function (req, res) {
-  res.sendFile(path.join(__dirname, "../public/remove.html"));
-});
+  app.get("/remove", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/remove.html"));
+  });
 
-// specialist route loads the add.html page, where the specialist modify inventory
+  // specialist route loads the add.html page, where the specialist modify inventory
 
-app.get("/modify", function (req, res) {
-  res.sendFile(path.join(__dirname, "../public/modify.html"));
-});
+  app.get("/modify", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/modify.html"));
+  });
 
-// specialist route loads the add.html page, where the specialist to stock inventory
+  // specialist route loads the add.html page, where the specialist to stock inventory
 
-app.get("/stock", function (req, res) {
-  res.sendFile(path.join(__dirname, "../public/stock.html"));
-});
+  app.get("/stock", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/stock.html"));
+  });
 
   // deptSearch route loads the deptSearch.html page, where dept Search in the db are displayed
   app.get("/deptSearch", function (req, res) {
