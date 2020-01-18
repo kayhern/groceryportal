@@ -63,7 +63,7 @@
 
     <hr>
 
-    <!-- buttons -->
+    <!--add/modify/remove buttons -->
     <a href='/add' class='btn btn-primary btn-lg'>
       <span class='fa fa-list'></span> Add Inventory</span>
     </a>
@@ -75,65 +75,55 @@
       <span class='fa fa-th-list'></span> Stock Inventory</a>
 
 
-    <br>
-    <div class="row container">
-
-      <br>
+     <br>
 
       <h4> Select item and enter its information to display the location </h4>
-    </div>
-    <!--end of row 2-->
-    <div class="col-md-4">
+   
+    <!--end of row -->
+<!--radio buttons used for search-->
+     <div class="col-md-4">
       <form>
         <input type="radio" name="searchParam" value="id"> ID<br>
         <input type="radio" name="searchParam" value="item_number"> Item Number<br>
         <input type="radio" name="searchParam" value="name" checked> Name<br>
       </form>
 
-      <!-- </div> -->
+    </div> 
 
+    <br>
+    <div class="row"> 
+    <div class="form-group col-md-4" >
       <br>
-
-      <!-- input field for item to search for to locate on map -->
-      <div class="form-group">
-        <br>
-        <label form""><b>Search Item</b></label>
-        <input type="text" class="form-control" id="map-search" placeholder="">
-      </div>
-
-      <div class="row">
-
-        <div class="col-md-4">
-
-
-          <!--locate button code-->
-
-
-          <div class="text-right">
-            <button type="submit" class="btn btn-primary btn-md" id="locate-btn">
-              <span class glyphicon glyphicon-book"></span> LOCATE
-            </button>
-
-          </div>
-
-          <!--end of locate button code-->
-        </div>
-
-
-
-
-        <div class="col-md-4">
-          <!-- display inventory map-->
-          <img src="images/floor.png" width="400">
-        </div>
-
-      </div>
-
-
+      <label form""><b>Search Item</b></label>
+      <input type="text" class="form-control" id="map-search" placeholder="">
     </div>
-    <!--end div for main-->
+
+  
+
+      <div class="col-md-1">
+
+          <br>
+        <!--locate button code-->
+        <div class="text-right">
+          <button type="submit" class="btn btn-primary btn-md" id="locate-btn">
+            <span class glyphicon glyphicon-book"></span> LOCATE
+          </button>
+        </div>
+
+        <!--end of locate button code-->
+      </div>
 
 
+      <div class="col-md-4">
+        <br>
+        <!-- display inventory map-->
+        <img src="images/floor.png" width="400">
+      </div>
+      
+    </div> 
+
+  </div>
+  <!--end div for main-->
 
 
 </body>

@@ -1,10 +1,17 @@
+
 body {
-    margin: 20px
-}
-/* Navbar container */
+    margin: 20px;
+    background-image: url(/images/apple-carrots-citrus.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right top;
+  }
+
+
+/* Navbar hover and color formatting of our nave bar. Code obtained from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(149, 215, 246) !important;
     font-family: Arial;
   }
   
@@ -52,12 +59,6 @@ body {
     z-index: 1;
   }
   
-  /* Mega Menu header, if needed */
-  .dropdown-content .header {
-    background: red;
-    padding: 16px;
-    color: white;
-  }
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
