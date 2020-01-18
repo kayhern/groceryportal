@@ -22,15 +22,15 @@
 </head>
 
 <body>
+  <!--nav menu bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand"><img src="images/wizard.png" width="175"> Inventory Wizard</a>
-	
-	
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-	
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="nav navbar-nav">
         <li class="nav-item">
@@ -44,7 +44,7 @@
           <a class="nav-link" href="search.html">Search</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="specialist.html">Inventory Specialist</a>
+          <a class="nav-link active" href="specialist.html"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="all.html">All Inventory</a>
@@ -53,13 +53,14 @@
           <a class="nav-link" href="about.html">About</a>
         </li>
       </ul>
-  </nav> <!--end of nav-->
+  </nav>
+  <!--end of nav-->
 
-  <div class="container" id="main">
+  <div id="main">
 
     <h2> Inventory Specialist Stock Information</h2>
     <!-- <hr> -->
-    
+
     <hr>
 
     <!-- buttons -->
@@ -75,56 +76,62 @@
 
 
     <br>
-
-    <h2> Search Page</h2>
     <div class="row container">
-  
-      <div class="container row">
-        <!-- drop down menu code obtained from -->
-  
-        <h3> Check one only: </h3>
-      </div>
-      <!--end of row 2-->
-      <div class="col-md-4">
-        <form>
+
+      <br>
+
+      <h4> Select item and enter its information to display the location </h4>
+    </div>
+    <!--end of row 2-->
+    <div class="col-md-4">
+      <form>
         <input type="radio" name="searchParam" value="id"> ID<br>
         <input type="radio" name="searchParam" value="item_number"> Item Number<br>
         <input type="radio" name="searchParam" value="name" checked> Name<br>
       </form>
-   
+
+      <!-- </div> -->
+
+      <br>
+
+      <!-- input field for item to search for to locate on map -->
+      <div class="form-group">
+        <br>
+        <label form""><b>Search Item</b></label>
+        <input type="text" class="form-control" id="map-search" placeholder="">
       </div>
 
-    <div class="row">
+      <div class="row">
 
-<div class="col-md-4">
+        <div class="col-md-4">
 
 
-      <!--locate button code-->
-	  
-     
-        <div class="text-right">
-          <button type="submit" class="btn btn-primary btn-md" id="locate-btn">
-            <span class glyphicon glyphicon-book"></span> LOCATE
-          </button>
+          <!--locate button code-->
 
+
+          <div class="text-right">
+            <button type="submit" class="btn btn-primary btn-md" id="locate-btn">
+              <span class glyphicon glyphicon-book"></span> LOCATE
+            </button>
+
+          </div>
+
+          <!--end of locate button code-->
         </div>
-     
-      <!--end of locate button code-->
-</div>
-    
 
 
 
-  <div class="col-md-4">
-    <!-- display inventory map-->
-    <img src="images/floor.png" width="400">
-  </div>
 
-</div>
+        <div class="col-md-4">
+          <!-- display inventory map-->
+          <img src="images/floor.png" width="400">
+        </div>
+
+      </div>
 
 
-  </div>
-  <!--end div for main-->
+    </div>
+    <!--end div for main-->
 
 
 
