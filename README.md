@@ -31,3 +31,4 @@ Instead of trying to maintain grocery store inventory on a flat Excel spreadshee
 This project was made for a coding boot camp course. This was a collaborative project required of the coding boot camp course. This is maintained by @kayhern (the owner of this GitHub repo), @LisaMichael, @Mario-cyber. 
 
 ### Video of Functionality
+Link: https://drive.google.com/file/d/1lkHOQXNTZSjoSjP9kEWBZ7mnVDnhTlO2/view
