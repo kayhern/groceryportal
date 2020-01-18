@@ -9,18 +9,18 @@ This app also lets users be notified when stock is low.
 Instead of trying to maintain grocery store inventory on a flat Excel spreadsheet, this dynamic management tool can be used instead to easy add, maitinence, and item locator.
 
 ### What tools are used in this project
-####Language
-*HTML/CSS
-*Bootstrap
-*Javascript 
-*Jquery
-*mySQL
+###Languages
+**HTML/CSS
+**Bootstrap
+**Javascript 
+**Jquery
+**mySQL
 
-####Node.js Packages
-*Express
-*Sequelize
-*Path
-*{NEW TECHNOLOGY}
+###Node.js Packages
+**Express
+**Sequelize
+**Path
+**{NEW TECHNOLOGY}
 
 ### How users can get started with the project
 1. Click on the link above to deploy the site
