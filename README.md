@@ -25,6 +25,7 @@ Instead of trying to maintain grocery store inventory on a flat Excel spreadshee
 ### How users can get started with the project
 1. Click on the link above to deploy the site
 1. Navigate using the buttons on the homepage
+1. All Inventory should call from all of the items in the SQL database
 
 ### Who maintains and contributes to the project
 This project was made for a coding boot camp course. This was a collaborative project required of the coding boot camp course. This is maintained by @kayhern (the owner of this GitHub repo), @LisaMichael, @Mario-cyber. 

@@ -2,8 +2,8 @@
   $("#add-btn").on("click", function (event) {
     event.preventDefault();
 
-    // Make a newGrocery object
-    var newGrocery = {
+    // Make a new object
+    var newItem = {
       item_name: $("#item_name").val().trim(),
       price: $("#price").val().trim(),
       quantity: $("#quantity").val().trim(),
@@ -11,12 +11,12 @@
     };
 
     // Send an AJAX POST-request with jQuery
-    $.post("/api/new", newGrocery)
+    $.post("/api/posts", newItem)
       // On success, run the following code
       .then(function (data) {
         // Log the data we found
         console.log(data);
-        newGrocery
+        newItem
           .create({
             item_name: $("#item_name").val().trim(),
             price: $("#price").val().trim(),
